@@ -1,6 +1,6 @@
 # CompoSil
 
-Composite Silhouette is a Python package for robust clustering evaluation.
+Composite Silhouette (or `composil`) is a Python package for robust clustering evaluation.
 It introduces a composite metric that combines micro-averaged and macro-averaged silhouette using statistical weighting.
 This provides a more nuanced assessment of clustering quality, helping identify the optimal number of clusters and compare performance across different clustering scenarios with greater confidence.
 The framework is especially useful for data scientists, ML engineers, and researchers who want reliable metrics for centroid-based clustering.
@@ -21,13 +21,7 @@ When a statistically significant difference is found, the dominant metric receiv
 > **Note:** The current implementation uses **K-Means** for clustering, which pairs well with silhouette-based evaluation and repeated subsampling. While the method can be adapted to other clustering algorithms, it already offers meaningful, statistically grounded insights for centroid-based clustering tasks.
 
 ## Installation 
-You can install Composite Silhouette from PyPI: 
-
-```bash
-pip install composite-silhouette
-```
-
-or directly from the GitHub repository: 
+You can install Composite Silhouette directly from the GitHub repository: 
 
 ```bash
 pip install git+https://github.com/semoglou/composil.git
